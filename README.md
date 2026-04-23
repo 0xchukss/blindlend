@@ -4,7 +4,7 @@
 
 ## What it does
 
-ConfidentialLend enables on-chain credit scoring without data exposure. A borrower submits their encrypted monthly income, existing debt, and loan request. The smart contract computes a credit score using Fully Homomorphic Encryption (FHE), approves or rejects the loan - and the raw financial figures are never visible on-chain, not even to the protocol itself.
+BlindLend enables on-chain credit scoring without data exposure. A borrower submits their encrypted monthly income, existing debt, and loan request. The smart contract computes a credit score using Fully Homomorphic Encryption (FHE), approves or rejects the loan - and the raw financial figures are never visible on-chain, not even to the protocol itself.
 
 ## The problem it solves
 
