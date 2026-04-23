@@ -1,0 +1,5 @@
+{
+  "installCommand": "corepack pnpm install --ignore-scripts",
+  "buildCommand": "corepack pnpm next:build",
+  "framework": "nextjs"
+}
