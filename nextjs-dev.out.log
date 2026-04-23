@@ -1,0 +1,13 @@
+
+> site@0.1.0 dev C:\Users\Hp\Desktop\ZAMA LEND\packages\nextjs
+> next dev
+
+   ▲ Next.js 15.2.5
+   - Local:        http://localhost:3000
+   - Network:      http://172.16.0.2:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 9.6s
+ ○ Compiling / ...
+/*! 🌼 daisyUI 5.0.9 */

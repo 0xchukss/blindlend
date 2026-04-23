@@ -1,4 +1,3 @@
-import { ConnectWallet } from "../_components/ConnectWallet";
 import { CreditApplication } from "../_components/CreditApplication";
 import { PoolStats } from "../_components/PoolStats";
 
@@ -13,7 +12,6 @@ export default function LendPage() {
               Private credit scoring powered by FHE
             </h1>
           </div>
-          <ConnectWallet />
         </header>
 
         <section className="mb-8 rounded-3xl border border-slate-200 bg-white/75 p-6 shadow-xl backdrop-blur">

@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
         tls: "./empty-module.js",
         child_process: "./empty-module.js",
         worker_threads: "./empty-module.js",
+        ethers: require.resolve("ethers"),
       },
     },
   },
@@ -32,6 +33,10 @@ const nextConfig: NextConfig = {
         tls: false,
         child_process: false,
         worker_threads: false,
+      };
+      config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        ethers: require.resolve("ethers"),
       };
     }
     config.externals.push("pino-pretty", "lokijs", "encoding");
