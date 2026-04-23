@@ -1,4 +1,4 @@
-# ConfidentialLend
+# BlindLend
 
 > Private DeFi credit scoring powered by Zama FHEVM - Zama Mainnet S2 Hackathon
 
