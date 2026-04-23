@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useFhevm } from "@fhevm-sdk";
+import { useFhevm } from "@fhevm/sdk";
 import { toHex } from "viem";
 import { useAccount, usePublicClient, useWriteContract } from "wagmi";
 import {
@@ -119,3 +119,4 @@ export const CollateralDeposit = () => {
     </section>
   );
 };
+

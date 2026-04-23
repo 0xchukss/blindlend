@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { useFhevm } from "@fhevm-sdk";
+import { useFhevm } from "@fhevm/sdk";
 import { useAccount } from "wagmi";
 import { RainbowKitCustomConnectButton } from "~~/components/helper/RainbowKitCustomConnectButton";
 import { useFHECounterWagmi } from "~~/hooks/fhecounter-example/useFHECounterWagmi";
@@ -248,3 +248,4 @@ function printBooleanProperty(name: string, value: boolean) {
     </div>
   );
 }
+

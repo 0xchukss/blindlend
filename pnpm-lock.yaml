@@ -179,7 +179,7 @@ importers:
 
   packages/nextjs:
     dependencies:
-      '@fhevm-sdk':
+      '@fhevm/sdk':
         specifier: workspace:*
         version: link:../fhevm-sdk
       '@heroicons/react':
@@ -16376,3 +16376,4 @@ snapshots:
       '@types/react': 19.0.14
       react: 19.0.0
       use-sync-external-store: 1.4.0(react@19.0.0)
+

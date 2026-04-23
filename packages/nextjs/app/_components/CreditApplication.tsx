@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useFhevm } from "@fhevm-sdk";
+import { useFhevm } from "@fhevm/sdk";
 import { decodeEventLog, toHex } from "viem";
 import { useAccount, usePublicClient, useReadContract, useWriteContract } from "wagmi";
 import {
@@ -317,3 +317,4 @@ export const CreditApplication = () => {
     </section>
   );
 };
+
