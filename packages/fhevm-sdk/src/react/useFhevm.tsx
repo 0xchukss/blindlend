@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { FhevmInstance } from "../fhevmTypes.js";
-import { createFhevmInstance } from "../internal/fhevm.js";
+import type { FhevmInstance } from "../fhevmTypes";
+import { createFhevmInstance } from "../internal/fhevm";
 import { ethers } from "ethers";
 
 function _assert(condition: boolean, message?: string): asserts condition {

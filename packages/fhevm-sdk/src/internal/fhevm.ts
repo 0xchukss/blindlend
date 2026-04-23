@@ -292,9 +292,15 @@ export const createFhevmInstance = async (parameters: {
   const pub = await publicKeyStorageGet(aclAddress);
   throwIfAborted();
 
+  const envRelayerUrl =
+    typeof process !== "undefined"
+      ? process.env.NEXT_PUBLIC_RELAYER_URL || process.env.VITE_RELAYER_URL
+      : undefined;
+  const relayerUrl = envRelayerUrl || relayerSDK.SepoliaConfig.relayerUrl;
+
   const config: FhevmInstanceConfig = {
     ...relayerSDK.SepoliaConfig,
-    relayerUrl: `${relayerSDK.SepoliaConfig.relayerUrl}/v2`,
+    relayerUrl,
     network: providerOrUrl,
     publicKey: pub.publicKey,
     publicParams: pub.publicParams,

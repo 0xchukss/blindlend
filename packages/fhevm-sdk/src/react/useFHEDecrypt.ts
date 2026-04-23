@@ -1,9 +1,9 @@
 "use client";
 
 import { useCallback, useMemo, useRef, useState } from "react";
-import { FhevmDecryptionSignature } from "../FhevmDecryptionSignature.js";
-import { GenericStringStorage } from "../storage/GenericStringStorage.js";
-import { FhevmInstance } from "../fhevmTypes.js";
+import { FhevmDecryptionSignature } from "../FhevmDecryptionSignature";
+import { GenericStringStorage } from "../storage/GenericStringStorage";
+import { FhevmInstance } from "../fhevmTypes";
 import { ethers } from "ethers";
 
 export type FHEDecryptRequest = { handle: string; contractAddress: `0x${string}` };
