@@ -9,3 +9,5 @@ packages/*/.turbo
 packages/*/coverage
 tmp*
 .vscode
+nextjs-dev.out.log
+nextjs-dev.err.log
