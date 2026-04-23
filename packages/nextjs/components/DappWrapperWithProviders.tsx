@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { InMemoryStorageProvider } from "@fhevm/sdk";
 import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
-import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Toaster } from "react-hot-toast";
 import { WagmiProvider } from "wagmi";
@@ -52,4 +52,3 @@ export const DappWrapperWithProviders = ({ children }: { children: React.ReactNo
     </WagmiProvider>
   );
 };
-

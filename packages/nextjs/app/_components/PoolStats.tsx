@@ -70,12 +70,8 @@ export const PoolStats = () => {
         <tbody className="bg-white text-slate-700">
           <tr>
             <td className="px-3 py-2">{address ? `${address.slice(0, 6)}...${address.slice(-4)}` : "-"}</td>
-            <td className="px-3 py-2">
-              {typeof approved === "boolean" ? (approved ? "Yes" : "No") : "Not finalized"}
-            </td>
-            <td className="px-3 py-2">
-              {typeof claimed === "boolean" ? (claimed ? "Yes" : "No") : "No"}
-            </td>
+            <td className="px-3 py-2">{typeof approved === "boolean" ? (approved ? "Yes" : "No") : "Not finalized"}</td>
+            <td className="px-3 py-2">{typeof claimed === "boolean" ? (claimed ? "Yes" : "No") : "No"}</td>
           </tr>
         </tbody>
       </table>

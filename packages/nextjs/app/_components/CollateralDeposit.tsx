@@ -4,11 +4,7 @@ import { useMemo, useState } from "react";
 import { useFhevm } from "@fhevm/sdk";
 import { toHex } from "viem";
 import { useAccount, usePublicClient, useWriteContract } from "wagmi";
-import {
-  CHAIN_ID,
-  CONTRACT_ADDRESS,
-  confidentialLendAbi,
-} from "~~/app/_components/confidentialLendConfig";
+import { CHAIN_ID, CONTRACT_ADDRESS, confidentialLendAbi } from "~~/app/_components/confidentialLendConfig";
 
 export const CollateralDeposit = () => {
   const { address, chain } = useAccount();
@@ -119,4 +115,3 @@ export const CollateralDeposit = () => {
     </section>
   );
 };
-

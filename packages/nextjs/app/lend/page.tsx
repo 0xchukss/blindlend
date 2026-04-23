@@ -27,9 +27,7 @@ export default function LendPage() {
           <PoolStats />
         </section>
 
-        <footer className="mt-10 pb-4 text-center text-sm text-slate-600">
-          Built on Zama FHEVM - Sepolia Testnet
-        </footer>
+        <footer className="mt-10 pb-4 text-center text-sm text-slate-600">Built on Zama FHEVM - Sepolia Testnet</footer>
       </div>
     </div>
   );

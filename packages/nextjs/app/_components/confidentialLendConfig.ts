@@ -11,15 +11,10 @@ export const SEPOLIA_ADDRESSES = {
   USDC_MOCK_UNDERLYING: "0x9b5Cd13b8eFbB58Dc25A05CF411D8056058aDFfF",
 } as const;
 
-export const CONTRACT_ADDRESS =
-  process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
-  process.env.VITE_CONTRACT_ADDRESS ||
-  "";
+export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || process.env.VITE_CONTRACT_ADDRESS || "";
 
 export const RELAYER_URL =
-  process.env.NEXT_PUBLIC_RELAYER_URL ||
-  process.env.VITE_RELAYER_URL ||
-  SEPOLIA_ADDRESSES.RELAYER_URL;
+  process.env.NEXT_PUBLIC_RELAYER_URL || process.env.VITE_RELAYER_URL || SEPOLIA_ADDRESSES.RELAYER_URL;
 
 export const CHAIN_ID =
   Number(process.env.NEXT_PUBLIC_CHAIN_ID || process.env.VITE_CHAIN_ID || SEPOLIA_ADDRESSES.CHAIN_ID) ||

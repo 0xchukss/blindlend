@@ -4,11 +4,7 @@ import { useMemo, useState } from "react";
 import { useFhevm } from "@fhevm/sdk";
 import { decodeEventLog, toHex } from "viem";
 import { useAccount, usePublicClient, useReadContract, useWriteContract } from "wagmi";
-import {
-  CHAIN_ID,
-  CONTRACT_ADDRESS,
-  confidentialLendAbi,
-} from "~~/app/_components/confidentialLendConfig";
+import { CHAIN_ID, CONTRACT_ADDRESS, confidentialLendAbi } from "~~/app/_components/confidentialLendConfig";
 
 type DecisionState = {
   clearScore: number;
@@ -17,11 +13,10 @@ type DecisionState = {
 } | null;
 
 function getClearValueByHandle(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  clearValues: Record<string, any>,
+  clearValues: Record<string, unknown>,
   handle: `0x${string}`,
-) {
-  return clearValues[handle] ?? clearValues[handle.toLowerCase()];
+): string | number | bigint | boolean {
+  return (clearValues[handle] ?? clearValues[handle.toLowerCase()]) as string | number | bigint | boolean;
 }
 
 function toHexValue(value: Uint8Array | `0x${string}`): `0x${string}` {
@@ -47,7 +42,11 @@ export const CreditApplication = () => {
     return (window as Window & { ethereum?: unknown }).ethereum;
   }, []);
 
-  const { instance, status: fheStatus, error: fheError } = useFhevm({
+  const {
+    instance,
+    status: fheStatus,
+    error: fheError,
+  } = useFhevm({
     provider: provider as never,
     chainId: chain?.id,
     initialMockChains: { 31337: "http://localhost:8545" },
@@ -294,9 +293,7 @@ export const CreditApplication = () => {
           <p className="text-sm text-slate-600">Credit Score</p>
           <p className="text-3xl font-extrabold text-slate-900">{decision.clearScore}</p>
           <p className="mt-2 text-sm text-slate-700">Loan Amount (clear): {decision.clearLoanAmount.toString()}</p>
-          <p className="mt-2 text-base font-bold text-slate-900">
-            {decision.approved ? "APPROVED" : "REJECTED"}
-          </p>
+          <p className="mt-2 text-base font-bold text-slate-900">{decision.approved ? "APPROVED" : "REJECTED"}</p>
           {decision.approved && (
             <div className="mt-4">
               <button
@@ -317,4 +314,3 @@ export const CreditApplication = () => {
     </section>
   );
 };
-
