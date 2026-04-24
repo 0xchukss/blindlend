@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="BlindLend Logo">
+  <rect width="800" height="520" fill="#000000" />
+  <ellipse cx="400" cy="250" rx="220" ry="92" fill="#f3f4f6" />
+  <rect x="290" y="95" width="220" height="110" rx="18" fill="#f3f4f6" />
+  <path d="M276 255c43 30 205 40 249-2-17 60-77 93-133 93-57 0-102-25-116-91z" fill="#000000" />
+  <path d="M188 294h428l-43 57 43 99H184l41-99z" fill="#f3f4f6" />
+  <ellipse cx="348" cy="318" rx="48" ry="58" fill="#000000" />
+  <ellipse cx="462" cy="318" rx="48" ry="58" fill="#000000" />
+  <path d="M260 450c6-74 52-108 141-108s137 35 143 108z" fill="#f3f4f6" />
+</svg>

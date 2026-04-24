@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CreditApplication } from "../_components/CreditApplication";
 import { PoolStats } from "../_components/PoolStats";
 
@@ -6,11 +7,20 @@ export default function LendPage() {
     <div className="w-full bg-[radial-gradient(circle_at_top,_#fde68a_0%,_#f8fafc_35%,_#e2e8f0_100%)] px-4 py-6 text-slate-900 md:px-8">
       <div className="mx-auto max-w-6xl">
         <header className="mb-10 flex flex-col gap-4 rounded-3xl border border-amber-200 bg-white/70 p-6 shadow-lg backdrop-blur md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">BlindLend</p>
-            <h1 className="mt-1 text-3xl font-black leading-tight md:text-4xl">
-              Private credit scoring powered by FHE
-            </h1>
+          <div className="flex items-center gap-3">
+            <Image
+              alt="BlindLend logo"
+              className="h-12 w-12 rounded-full border border-amber-300"
+              height={48}
+              src="/blindlend-logo.svg"
+              width={48}
+            />
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">BlindLend</p>
+              <h1 className="mt-1 text-3xl font-black leading-tight md:text-4xl">
+                Private credit scoring powered by FHE
+              </h1>
+            </div>
           </div>
         </header>
 
